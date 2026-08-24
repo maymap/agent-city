@@ -9,6 +9,8 @@
 
 **Agent-City** 是一個開源的「微型社會模擬器」。它結合了 **3D 視覺化 (React Three Fiber)** 與 **虛擬 Redis 數據架構**，模擬多個 AI 代理人 (Agent) 在數位都市中的社交、經濟與行為演化。
 
+[🔗 **查看即時 Demo (Live Demo)**](https://maymap.github.io/agent-city/)
+
 ---
 
 ## 🌟 核心特色 (Core Features)
