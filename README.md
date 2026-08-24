@@ -1,66 +1,68 @@
-# Memoria-Nexus: A Neuroscience-Inspired NPC Memory Lab
+# Agent-City: A Redis-Powered Autonomous Micro-Society
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)](https://redis.io)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org)
 [![Three.js](https://img.shields.io/badge/Three.js-black?style=flat&logo=three.dot.js&logoColor=white)](https://threejs.org)
 
-> **"Give your NPCs a soul, not just a script."**
+> **"Observe how AI agents live, trade, and evolve in a data-driven sandbox world."**
 
-**Memoria-Nexus** 是一個開源的互動式 AI 記憶實驗室。它模仿生物大腦的運作機制，利用 **Redis** 的極速性能，為 AI 代理人 (NPC) 提供一個具有情感權重、記憶衰減與長期鞏固功能的「數位大腦」。
-
-透過 **React Three Fiber (R3F)**，我們將枯燥的資料檢索轉化為動態的 3D 神經元視覺化畫面，讓你親眼看見 AI 是如何「思考」與「回憶」的。
+**Agent-City** 是一個開源的「微型社會模擬器」。它結合了 **3D 視覺化 (React Three Fiber)** 與 **虛擬 Redis 數據架構**，模擬多個 AI 代理人 (Agent) 在數位都市中的社交、經濟與行為演化。
 
 ---
 
 ## 🌟 核心特色 (Core Features)
 
-### 1. 🧠 3D Neural Debugger (視覺化神經偵錯器)
-不再是黑箱！透過 R3F 渲染的 3D 大腦模型，即時觀測 Redis 中的記憶節點激發。
-*   **閃爍效果**：當記憶被檢索時，對應的神經元會發光。
-*   **連結強度**：視覺化呈現不同記憶間的語義關聯。
+### 🏙️ 動態環境與社會規律
+- **晝夜循環系統**：環境光影隨時間動態切換，影響 Agent 的工作與生活作息。
+- **地標演化機制**：銀行、工廠、實驗室等建築會隨城市繁榮度從「線框虛擬」進化為「發光實體」。
+- **有機繁榮演進**：城市氛圍隨全城總財富在「冷冽工業」與「溫暖繁榮」間平滑過渡。
 
-### 2. ⚡ Redis-Native Brain (原生 Redis 大腦)
-完全基於 Redis 生態系統構建，追求極致的低延遲與高併發：
-*   **RedisVL (Vector Search)**：實現語義記憶檢索。
-*   **RedisJSON**：儲存動態性格參數與情感狀態。
-*   **Sorted Sets**：模擬遺忘曲線 (Forgetting Curve)。
+### 🧬 代理人靈魂與行為
+- **職能特化**：商人 (Merchant)、工人 (Worker)、科學家 (Scientist) 具備不同的外型與行為邏輯。
+- **內心獨白氣泡**：漫畫風格的 Pop-in 氣泡，實時反映代理人的心理狀態。
+- **衛星追蹤模式**：一鍵鎖定代理人，以特寫視角觀察其穿越街區與地標的細節。
 
-### 3. 🎭 Emotional Weighting (情感加權)
-記憶不只是文字。每條記憶都帶有情緒標籤，NPC 的當前心情會直接影響他「想起」什麼。
-
-### 4. 🌙 Sleep & Consolidation (睡眠與鞏固機制)
-模擬生物睡眠，後端 Agent 會在「睡眠期」自動壓縮短期對話為長期性格特質，減少 Token 消耗。
+### 🖥️ 底層數據核心 (Virtual Redis)
+- **指令鏡像終端**：即時呈現底層數據異動，包含 `GEOADD` (座標更新)、`PUBLISH` (消息廣播) 與 `HSET` (狀態變更)。
+- **生命軌跡記憶**：詳實記錄每一位代理人的歷史事件，建構具備時間深度的社會模擬。
 
 ---
 
-## 🛠 技術棧 (Tech Stack)
+## 🛠️ 技術棧 (Tech Stack)
 
-*   **Frontend**: React, React Three Fiber, Drei, Tailwind CSS
-*   **Backend**: Node.js, Express
-*   **Database**: Redis (RedisJSON, RedisVL, Pub/Sub)
-*   **AI Engine**: LLM (OpenAI / Gemini / Claude) via LangChain
+*   **Frontend**: React, React Three Fiber (R3F), Drei, Tailwind CSS
+*   **Logic Engine**: 模擬 Redis 數據結構 (VSS, Pub/Sub, Geo)
+*   **Visualization**: 3D Cyberpunk Grid, Volumetric Clouds, Data Motes
 
 ---
 
 ## 🚀 快速開始 (Quick Start)
 
-*(開發中 - Coming Soon)*
+```bash
+# 克隆儲存庫
+git clone https://github.com/maymap/Agent-City.git
+
+# 進入目錄
+cd Agent-City
+
+# 安裝相依套件
+npm install
+
+# 啟動開發伺服器
+npm run dev
+```
 
 ---
 
-## 🗺 發展藍圖 (Roadmap)
+## 🗺️ 發展藍圖 (Roadmap)
 
-- [ ] 初始化 Redis 記憶模型與 API
-- [ ] 實作 3D 神經元基礎渲染
-- [ ] 加入記憶衰減與情感權重邏輯
-- [ ] 釋出 Unity / Unreal SDK 插件
-
----
-
-## 📄 授權條款 (License)
-
-本專案採用 [MIT License](LICENSE) 授權。
+- [x] 實作 3D 城市與自主移動邏輯
+- [x] 整合晝夜循環與繁榮度連動
+- [x] 加入對話氣泡與追蹤模式
+- [ ] 實作真正的 Redis-Stack 後端串接
+- [ ] 增加更多代理人職業與社交衝突事件
 
 ---
 
-Designed with ❤️ by **maymap** and **Hermes Agent**.
+Designed with 🏙️ by **maymap** and **Hermes Agent**.
